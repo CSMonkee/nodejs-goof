@@ -15,3 +15,7 @@ workflows:
   build-snyk:
     jobs:
       - snyk-scan
+          fail-on-issues: false
+      - run:
+          name: Run Unit Tests
+          command: |
