@@ -5,10 +5,10 @@ orbs:
 jobs:
   snyk-scan:
     docker:
-      - image: cimg/openjdk:11.0
+      - image: circleci/node:@latest
     steps:    
       - checkout
-      - run: mvn install
+      - run: npm install --force
       - snyk/scan
 
 workflows:
