@@ -1,0 +1,5 @@
+ignore:
+  SNYK-JS-DICER-2311764:
+    - '*':
+        reason: 'Test .snyk ignore is SCM'
+        expires: '2024-06-30T21:37:44.938Z'
